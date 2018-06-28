@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         style="@style/Widget.MaterialComponents.BottomAppBar"
@@ -20,7 +19,6 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="@string/cretae_action"
         app:titleTextColor="@android:color/black">
-
 
     </android.support.design.bottomappbar.BottomAppBar>
 

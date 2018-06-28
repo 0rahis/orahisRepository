@@ -10,7 +10,7 @@ import android.widget.EditText;
  * Created by shkryaba on 24/06/2018.
  */
 
-public class CreateActionActivity extends AppCompatActivity {
+public class CreateActionActivity extends BaseActivity {
 
     private static final String TEXT = "TEXT";
     private EditText editText;
