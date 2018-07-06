@@ -1,0 +1,246 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geekbrains.weather.WeatherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_country"
+                android:text="FRI 06 JUNE, 09:28 PM"
+                android:layout_marginLeft="@dimen/default_padding"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/default_padding"
+                android:text="@string/country"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/baseFonColor">
+
+            <ImageView
+                android:id="@+id/ivWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/default_padding"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rain_3x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="18\u00B0"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="@dimen/default_padding"
+                android:textSize="80sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                    android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/time_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21 PM"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/weather_now"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rain_3x" />
+
+                    <TextView
+                        android:id="@+id/temp_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="14\u00B0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+                android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/time_now1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00 PM"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/weather_now1"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rain_3x" />
+
+                    <TextView
+                        android:id="@+id/temp_now1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="12\u00B0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                    android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/time_now2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03 AM"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/weather_now2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rain_3x" />
+
+                    <TextView
+                        android:id="@+id/temp_now2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="15\u00B0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+                    android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/time_now3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="09 AM"
+                        android:textColor="@android:color/white"
+
+
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/weather_now3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rain_3x" />
+
+                    <TextView
+                        android:id="@+id/temp_now3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="19\u00B0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
